@@ -1,10 +1,25 @@
 import { useState} from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
-import { Container } from './styles.ts';
+import { Container } from './styles';
 import api from '../../services/api';
 
-const Food = ({food, handleEditFood, handleDelete}) => {
+interface FoodProps { 
+    id: string,
+    available: boolean,
+    image:string,
+    name:string,
+    description: string,
+    price: number,
+}
+
+interface FoodComponentProps {  
+  food: FoodProps;  
+  handleEditFood: (food : FoodProps) => void;
+  handleDelete: (productId: string) => void;
+}
+
+const Food = ({food, handleEditFood, handleDelete}: FoodComponentProps) => {
   const [isAvailable, setIsAvailable] = useState(food.available)
 
 
