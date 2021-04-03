@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { FiPlusSquare } from 'react-icons/fi';
 
-import { Container } from './styles';
+import { Container } from './styles.ts';
 import Logo from '../../assets/logo.svg';
 
 class Header extends Component {

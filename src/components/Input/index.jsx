@@ -7,7 +7,7 @@ import {
 
 import { useField } from '@unform/core';
 
-import { Container } from './styles';
+import { Container } from './styles.ts';
 
 const Input = ({ name, icon: Icon, ...rest }) => {
   const inputRef = useRef(null);
