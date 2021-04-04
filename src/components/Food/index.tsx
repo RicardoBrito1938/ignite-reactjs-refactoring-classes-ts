@@ -5,7 +5,7 @@ import { Container } from './styles';
 import api from '../../services/api';
 
 interface FoodProps { 
-    id: string,
+    id: number,
     available: boolean,
     image:string,
     name:string,
@@ -16,7 +16,7 @@ interface FoodProps {
 interface FoodComponentProps {  
   food: FoodProps;  
   handleEditFood: (food : FoodProps) => void;
-  handleDelete: (productId: string) => void;
+  handleDelete: (productId: number) => void;
 }
 
 const Food = ({food, handleEditFood, handleDelete}: FoodComponentProps) => {

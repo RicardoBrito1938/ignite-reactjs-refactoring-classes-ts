@@ -6,7 +6,7 @@ import Modal from '../Modal';
 import Input from '../Input';
 
 interface FoodProps { 
-  id: string,
+  id: number,
   available: boolean,
   image:string,
   name:string,
